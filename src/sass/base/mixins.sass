@@ -1,0 +1,33 @@
+@mixin square($size)
+  width: $size
+  height: $size
+
+@mixin circle($size)
+  width: $size
+  height: $size
+  border-radius: $size/2
+
+@mixin pseudoelement
+  position: absolute
+  content: ""
+  top: 0
+  left: 0
+
+@mixin background-icon($icon: null)
+  @if $icon
+    background-image: url(#{$icon})
+  background-size: contain
+  background: no-repeat center
+
+@mixin center-x
+  left: 50%
+  transform: translateX(-50%)
+
+@mixin center-y
+  top: 50%
+  transform: translateY(-50%)
+
+@mixin center-xy
+  left: 50%
+  top: 50%
+  transform: translateX(-50%) translateY(-50%)

@@ -1,4 +1,6 @@
-import './scss/base/reset.sass';
-import './scss/base/typography.sass';
+import './sass/base/reset.sass';
+import './sass/base/typography.sass';
 
-import './scss/views/index.sass';
+import './sass/layout/flex.sass';
+
+require.context("./sass/components", true, /.*/);
