@@ -27,42 +27,42 @@ html, body {
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
   font-size: 16px;
   line-height: 19px;
-  color: #333333; }
+  color: #212121; }
 
 .logotype {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 600;
-  color: #f0ffab; }
+  color: #B2EBF2; }
 
 h1, .h1 {
   font-size: 36px;
   font-weight: 300;
   line-height: 44px;
-  color: #333333; }
+  color: #212121; }
 
 h2, .h2 {
   font-size: 28px;
   font-weight: 300;
   line-height: 36px;
-  color: #333333; }
+  color: #212121; }
 
 h3, .h3 {
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
-  color: #333333; }
+  color: #212121; }
 
 h4, .h4 {
   font-size: 20px;
   font-weight: 300;
   line-height: 26px;
-  color: #333333; }
+  color: #212121; }
 
 h5, .h5 {
   font-size: 18px;
   font-weight: 300;
   line-height: 22px;
-  color: #333333; }
+  color: #212121; }
 
 p, span {
   font-size: inherit;
@@ -81,14 +81,14 @@ p, span {
 .button.button--nanuk {
   padding: 0 2em;
   overflow: hidden;
-  background: #385db5;
+  background: #FF5722;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s; }
   .button.button--nanuk > span {
     display: inline-block;
     padding: 1em 0; }
   .button.button--nanuk:hover {
-    background-color: #221bb5; }
+    background-color: #FF9800; }
     .button.button--nanuk:hover > span:nth-child(odd) {
       -webkit-animation: anim-nanuk-1 0.5s forwards;
       animation: anim-nanuk-1 0.5s forwards; }
@@ -231,12 +231,11 @@ p, span {
   color: inherit;
   vertical-align: middle;
   position: relative;
-  -webkit-backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale; }
+  cursor: pointer; }
   .button:focus {
     outline: none; }
-  .button > span {
-    vertical-align: middle; }
+  .button:active {
+    outline: none; }
 
 /* Sizes */
 .button--size-s {
@@ -270,16 +269,36 @@ p, span {
 
 .button--border-thick {
   border: 3px solid; }
+.form .form-row {
+  width: 450px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; }
+  .form .form-row .form-label {
+    font-size: 22px; }
+  .form .form-row .form-input[type="email"],
+  .form .form-row .form-input[type="password"] {
+    width: 300px;
+    padding: 5px; }
+    .form .form-row .form-input[type="email"]:focus,
+    .form .form-row .form-input[type="password"]:focus {
+      background-color: #B2EBF2; }
+
+/* Sizes */
+.form--size-m {
+  padding: 20px; }
 .landing-card {
-  padding: 50px;
+  padding: 5px 0;
   width: 100%;
   height: 100%;
-  background: #654335;
-  background: -webkit-linear-gradient(left top, #654335, black);
-  background: -o-linear-gradient(bottom right, #654335, black);
-  background: -moz-linear-gradient(bottom right, #654335, black);
-  background: linear-gradient(to bottom right, #654335, black);
-  color: #FFEAAA; }
+  background: #00BCD4;
+  background: -webkit-linear-gradient(left top, #00BCD4, black);
+  background: -o-linear-gradient(bottom right, #00BCD4, black);
+  background: -moz-linear-gradient(bottom right, #00BCD4, black);
+  background: linear-gradient(to bottom right, #00BCD4, black);
+  color: #FEFEFE; }
   .landing-card h1.brand-name {
     font-size: 80px;
     line-height: 100px; }
@@ -289,5 +308,23 @@ p, span {
   .landing-card small {
     font-size: 20px;
     line-height: 40px; }
+.nav-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center; }
+  .nav-bar a.nav-item {
+    display: inline;
+    color: #FEFEFE;
+    padding: 20px 30px;
+    text-decoration: none;
+    -webkit-transition: color, 0.5s;
+    transition: color, 0.5s; }
+    .nav-bar a.nav-item:hover {
+      background-color: #0097A7; }
 .section-title {
-  color: #FFEAAA; }
+  color: #FEFEFE; }

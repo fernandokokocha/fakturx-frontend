@@ -1,0 +1,22 @@
+@import '../variables/colors'
+
+.form
+  .form-row
+    width: 450px
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+    .form-label
+      font-size: 22px
+    .form-input[type="email"],
+    .form-input[type="password"]
+      width: 300px
+      padding: 5px
+      &:focus
+        background-color: $light-primary-color
+
+/* Sizes
+.form--size-m
+  padding: 20px

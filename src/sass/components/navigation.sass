@@ -1,0 +1,20 @@
+@import '../variables/colors'
+@import '../base/mixins'
+
+.nav-bar
+  position: absolute
+  top: 0
+  right: 0
+  background-color: transparent
+  display: inline-flex
+  flex-wrap: wrap
+  justify-content: flex-end
+  align-items: center
+  a.nav-item
+    display: inline
+    color: $light-text-color
+    padding: 20px 30px
+    text-decoration: none
+    @include transition(color, 0.5s)
+    &:hover
+      background-color: $dark-primary-color
