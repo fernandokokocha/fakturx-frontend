@@ -1,15 +1,28 @@
 @import '../variables/colors'
 @import '../base/mixins'
 
+.nav-container
+  position: absolute
+  top: 0
+  right: 0
+
 .nav-bar
   position: absolute
   top: 0
   right: 0
-  background-color: transparent
+  left: 0
+  background-color: $primary-color
+  .brand-name
+    font-size: 24px
+    line-height: 30px
+    padding: 20px 30px
+
+.nav-list
   display: inline-flex
   flex-wrap: wrap
   justify-content: flex-end
   align-items: center
+  background-color: transparent
   a.nav-item
     display: inline
     color: $light-text-color

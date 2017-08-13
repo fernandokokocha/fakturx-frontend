@@ -308,23 +308,36 @@ p, span {
   .landing-card small {
     font-size: 20px;
     line-height: 40px; }
+.nav-container {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
 .nav-bar {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: transparent;
+  left: 0;
+  background-color: #00BCD4; }
+  .nav-bar .brand-name {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 20px 30px; }
+
+.nav-list {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: center; }
-  .nav-bar a.nav-item {
+  align-items: center;
+  background-color: transparent; }
+  .nav-list a.nav-item {
     display: inline;
     color: #FEFEFE;
     padding: 20px 30px;
     text-decoration: none;
     -webkit-transition: color, 0.5s;
     transition: color, 0.5s; }
-    .nav-bar a.nav-item:hover {
+    .nav-list a.nav-item:hover {
       background-color: #0097A7; }
 .section-title {
   color: #FEFEFE; }
