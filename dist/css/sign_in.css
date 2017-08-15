@@ -265,26 +265,29 @@ p, span {
 .button-thick {
   font-weight: 600;
   border: 3px solid; }
-.form .form-row {
-  width: 450px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0; }
-  .form .form-row .form-label {
-    font-size: 22px; }
-  .form .form-row .form-input[type="email"],
-  .form .form-row .form-input[type="password"] {
-    width: 300px;
-    padding: 5px; }
-    .form .form-row .form-input[type="email"]:focus,
-    .form .form-row .form-input[type="password"]:focus {
-      background-color: #B2EBF2; }
-
-/* Sizes */
-.form--size-m {
-  padding: 20px; }
+.form {
+  width: 400px;
+  margin: 10px; }
+  @media (max-width: 420px) {
+    .form {
+      width: 300px; } }
+  .form .form-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; }
+    .form .form-row .form-label {
+      font-size: 22px;
+      width: 100px; }
+    .form .form-row .form-input[type="email"],
+    .form .form-row .form-input[type="password"] {
+      width: 300px;
+      padding: 5px; }
+      .form .form-row .form-input[type="email"]:focus,
+      .form .form-row .form-input[type="password"]:focus {
+        background-color: #B2EBF2; }
 .landing-card {
   padding: 5px 0;
   width: 100%;
@@ -315,6 +318,8 @@ p, span {
     align-items: center;
     background-color: transparent; }
     .top-left-container .nav-list .nav-item {
+      font-size: 24px;
+      line-height: 30px;
       display: inline;
       color: #FEFEFE;
       padding: 20px 30px;
@@ -323,10 +328,21 @@ p, span {
       transition: color, 0.5s; }
       .top-left-container .nav-list .nav-item:hover {
         background-color: #0097A7; }
+      @media (max-width: 420px) {
+        .top-left-container .nav-list .nav-item {
+          padding: 5px 15px;
+          font-size: 20px;
+          line-height: 24px; } }
 .nav-bar {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 0;
+  left: 0;
+  background-color: #00BCD4; }
+  .nav-bar .brand-name {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 20px; }
   .nav-bar .nav-list {
     display: inline-flex;
     flex-wrap: wrap;
@@ -342,34 +358,9 @@ p, span {
       transition: color, 0.5s; }
       .nav-bar .nav-list .nav-item:hover {
         background-color: #0097A7; }
-.landing-card h1.neon {
-  font-size: 90px;
-  line-height: 120px;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s; }
-  @media (max-width: 500px) {
-    .landing-card h1.neon {
-      font-size: 50px;
-      line-height: 75px; } }
-
-.landing-card p {
-  font-size: 35px;
-  line-height: 55px;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s; }
-  @media (max-width: 500px) {
-    .landing-card p {
-      font-size: 20px;
-      line-height: 30px; } }
-
-.landing-card small {
-  font-size: 16px;
-  line-height: 30px;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s; }
-  @media (max-width: 500px) {
-    .landing-card small {
-      font-size: 10px;
-      line-height: 16px; } }
 .section-title {
   color: #FEFEFE; }
+
+.landing-card h1.neon {
+  font-size: 50px;
+  line-height: 60px; }

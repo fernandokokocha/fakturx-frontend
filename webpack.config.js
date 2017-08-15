@@ -2,12 +2,16 @@ const path = require('path');
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-const extractSass = new ExtractTextPlugin("main.css");
+const extractSass = new ExtractTextPlugin({filename: "css/[name].css", allChunks: true});
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+      'index': './src/index.js',
+      'sign_in': './src/sign_in.js',
+      'invoices': './src/invoices.js'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: 'js/[name].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
