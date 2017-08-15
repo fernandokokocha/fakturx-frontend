@@ -1,7 +1,7 @@
 @import '../variables/colors'
 @import '../base/mixins'
 
-.button.button--nanuk
+.button.button-primary
   padding: 0 2em
   overflow: hidden
   background: $accent-color
@@ -13,11 +13,11 @@
     background-color: $secondary-accent-color
     > span
       &:nth-child(odd)
-        -webkit-animation: anim-nanuk-1 0.5s forwards
-        animation: anim-nanuk-1 0.5s forwards
+        -webkit-animation: anim-primary-1 0.5s forwards
+        animation: anim-primary-1 0.5s forwards
       &:nth-child(even)
-        -webkit-animation: anim-nanuk-2 0.5s forwards
-        animation: anim-nanuk-2 0.5s forwards
+        -webkit-animation: anim-primary-2 0.5s forwards
+        animation: anim-primary-2 0.5s forwards
       &:nth-child(odd), &:nth-child(even)
         -webkit-animation-timing-function: cubic-bezier(0.75, 0, 0.125, 1)
         transition-animation-function: cubic-bezier(0.75, 0, 0.125, 1)
@@ -55,7 +55,7 @@
         -webkit-animation-delay: 0.5s
         animation-delay: 0.5s
 
-@-webkit-keyframes anim-nanuk-1
+@-webkit-keyframes anim-primary-1
   0%,
   100%
     opacity: 1
@@ -78,7 +78,7 @@
     color: #fff
 
 
-@keyframes anim-nanuk-1
+@keyframes anim-primary-1
   0%,
   100%
     opacity: 1
@@ -101,7 +101,7 @@
     color: #fff
 
 
-@-webkit-keyframes anim-nanuk-2
+@-webkit-keyframes anim-primary-2
   0%,
   100%
     opacity: 1
@@ -124,7 +124,7 @@
     color: #fff
 
 
-@keyframes anim-nanuk-2
+@keyframes anim-primary-2
   0%,
   100%
     opacity: 1

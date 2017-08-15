@@ -1,0 +1,29 @@
+.landing-card h1.neon {
+  font-size: 90px;
+  line-height: 120px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (max-width: 500px) {
+    .landing-card h1.neon {
+      font-size: 50px;
+      line-height: 75px; } }
+
+.landing-card p {
+  font-size: 35px;
+  line-height: 55px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (max-width: 500px) {
+    .landing-card p {
+      font-size: 20px;
+      line-height: 30px; } }
+
+.landing-card small {
+  font-size: 16px;
+  line-height: 30px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (max-width: 500px) {
+    .landing-card small {
+      font-size: 10px;
+      line-height: 16px; } }

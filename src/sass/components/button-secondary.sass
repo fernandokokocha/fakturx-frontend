@@ -1,0 +1,7 @@
+@import '../variables/colors'
+@import '../base/mixins'
+
+.button.button-secondary
+  @include transition(background-color 0.3s)
+  &:hover
+    background-color: $secondary-accent-color

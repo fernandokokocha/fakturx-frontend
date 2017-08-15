@@ -70,6 +70,7 @@ p, span {
 .flex-column-center {
   display: flex;
   flex-flow: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
 
@@ -78,61 +79,61 @@ p, span {
   flex-flow: row;
   justify-content: center;
   align-items: center; }
-.button.button--nanuk {
+.button.button-primary {
   padding: 0 2em;
   overflow: hidden;
   background: #FF5722;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s; }
-  .button.button--nanuk > span {
+  .button.button-primary > span {
     display: inline-block;
     padding: 1em 0; }
-  .button.button--nanuk:hover {
+  .button.button-primary:hover {
     background-color: #FF9800; }
-    .button.button--nanuk:hover > span:nth-child(odd) {
-      -webkit-animation: anim-nanuk-1 0.5s forwards;
-      animation: anim-nanuk-1 0.5s forwards; }
-    .button.button--nanuk:hover > span:nth-child(even) {
-      -webkit-animation: anim-nanuk-2 0.5s forwards;
-      animation: anim-nanuk-2 0.5s forwards; }
-    .button.button--nanuk:hover > span:nth-child(odd), .button.button--nanuk:hover > span:nth-child(even) {
+    .button.button-primary:hover > span:nth-child(odd) {
+      -webkit-animation: anim-primary-1 0.5s forwards;
+      animation: anim-primary-1 0.5s forwards; }
+    .button.button-primary:hover > span:nth-child(even) {
+      -webkit-animation: anim-primary-2 0.5s forwards;
+      animation: anim-primary-2 0.5s forwards; }
+    .button.button-primary:hover > span:nth-child(odd), .button.button-primary:hover > span:nth-child(even) {
       -webkit-animation-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
       transition-animation-function: cubic-bezier(0.75, 0, 0.125, 1); }
-    .button.button--nanuk:hover > span:nth-child(1) {
+    .button.button-primary:hover > span:nth-child(1) {
       -webkit-animation-delay: 0s;
       animation-delay: 0s; }
-    .button.button--nanuk:hover > span:nth-child(2) {
+    .button.button-primary:hover > span:nth-child(2) {
       -webkit-animation-delay: 0.05s;
       animation-delay: 0.05s; }
-    .button.button--nanuk:hover > span:nth-child(3) {
+    .button.button-primary:hover > span:nth-child(3) {
       -webkit-animation-delay: 0.1s;
       animation-delay: 0.1s; }
-    .button.button--nanuk:hover > span:nth-child(4) {
+    .button.button-primary:hover > span:nth-child(4) {
       -webkit-animation-delay: 0.15s;
       animation-delay: 0.15s; }
-    .button.button--nanuk:hover > span:nth-child(5) {
+    .button.button-primary:hover > span:nth-child(5) {
       -webkit-animation-delay: 0.2s;
       animation-delay: 0.2s; }
-    .button.button--nanuk:hover > span:nth-child(6) {
+    .button.button-primary:hover > span:nth-child(6) {
       -webkit-animation-delay: 0.25s;
       animation-delay: 0.25s; }
-    .button.button--nanuk:hover > span:nth-child(7) {
+    .button.button-primary:hover > span:nth-child(7) {
       -webkit-animation-delay: 0.3s;
       animation-delay: 0.3s; }
-    .button.button--nanuk:hover > span:nth-child(8) {
+    .button.button-primary:hover > span:nth-child(8) {
       -webkit-animation-delay: 0.35s;
       animation-delay: 0.35s; }
-    .button.button--nanuk:hover > span:nth-child(9) {
+    .button.button-primary:hover > span:nth-child(9) {
       -webkit-animation-delay: 0.4s;
       animation-delay: 0.4s; }
-    .button.button--nanuk:hover > span:nth-child(10) {
+    .button.button-primary:hover > span:nth-child(10) {
       -webkit-animation-delay: 0.45s;
       animation-delay: 0.45s; }
-    .button.button--nanuk:hover > span:nth-child(11) {
+    .button.button-primary:hover > span:nth-child(11) {
       -webkit-animation-delay: 0.5s;
       animation-delay: 0.5s; }
 
-@-webkit-keyframes anim-nanuk-1 {
+@-webkit-keyframes anim-primary-1 {
   0%,
   100% {
     opacity: 1;
@@ -154,7 +155,7 @@ p, span {
   100% {
     color: #fff; } }
 
-@keyframes anim-nanuk-1 {
+@keyframes anim-primary-1 {
   0%,
   100% {
     opacity: 1;
@@ -176,7 +177,7 @@ p, span {
   100% {
     color: #fff; } }
 
-@-webkit-keyframes anim-nanuk-2 {
+@-webkit-keyframes anim-primary-2 {
   0%,
   100% {
     opacity: 1;
@@ -198,7 +199,7 @@ p, span {
   100% {
     color: #fff; } }
 
-@keyframes anim-nanuk-2 {
+@keyframes anim-primary-2 {
   0%,
   100% {
     opacity: 1;
@@ -219,6 +220,11 @@ p, span {
     color: #fff; }
   100% {
     color: #fff; } }
+.button.button-secondary {
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+  .button.button-secondary:hover {
+    background-color: #FF9800; }
 /* Common button styles */
 .button {
   min-width: 200px;
@@ -238,36 +244,26 @@ p, span {
     outline: none; }
 
 /* Sizes */
-.button--size-s {
+.button-s {
   font-size: 14px; }
 
-.button--size-m {
+.button-m {
   font-size: 16px; }
 
-.button--size-l {
+.button-l {
   font-size: 18px; }
 
-/* Typography */
-.button--text-upper {
-  text-transform: uppercase; }
-
-.button--text-thin {
-  font-weight: 300; }
-
-.button--text-medium {
-  font-weight: 500; }
-
-.button--text-thick {
-  font-weight: 600; }
-
-/* Borders */
-.button--border-thin {
+/* Visibility */
+.button-thin {
+  font-weight: 300;
   border: 1px solid; }
 
-.button--border-medium {
+.button-medium {
+  font-weight: 500;
   border: 2px solid; }
 
-.button--border-thick {
+.button-thick {
+  font-weight: 600;
   border: 3px solid; }
 .form .form-row {
   width: 450px;
@@ -308,36 +304,72 @@ p, span {
   .landing-card small {
     font-size: 20px;
     line-height: 40px; }
-.nav-container {
+.top-left-container {
   position: absolute;
   top: 0;
   right: 0; }
-
+  .top-left-container .nav-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent; }
+    .top-left-container .nav-list .nav-item {
+      display: inline;
+      color: #FEFEFE;
+      padding: 20px 30px;
+      text-decoration: none;
+      -webkit-transition: color, 0.5s;
+      transition: color, 0.5s; }
+      .top-left-container .nav-list .nav-item:hover {
+        background-color: #0097A7; }
 .nav-bar {
   position: absolute;
   top: 0;
-  right: 0;
-  left: 0;
-  background-color: #00BCD4; }
-  .nav-bar .brand-name {
-    font-size: 24px;
-    line-height: 30px;
-    padding: 20px 30px; }
+  right: 0; }
+  .nav-bar .nav-list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent; }
+    .nav-bar .nav-list .nav-item {
+      display: inline;
+      color: #FEFEFE;
+      padding: 20px 30px;
+      text-decoration: none;
+      -webkit-transition: color, 0.5s;
+      transition: color, 0.5s; }
+      .nav-bar .nav-list .nav-item:hover {
+        background-color: #0097A7; }
+.landing-card h1.neon {
+  font-size: 90px;
+  line-height: 120px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (max-width: 500px) {
+    .landing-card h1.neon {
+      font-size: 50px;
+      line-height: 75px; } }
 
-.nav-list {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: transparent; }
-  .nav-list a.nav-item {
-    display: inline;
-    color: #FEFEFE;
-    padding: 20px 30px;
-    text-decoration: none;
-    -webkit-transition: color, 0.5s;
-    transition: color, 0.5s; }
-    .nav-list a.nav-item:hover {
-      background-color: #0097A7; }
+.landing-card p {
+  font-size: 35px;
+  line-height: 55px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (max-width: 500px) {
+    .landing-card p {
+      font-size: 20px;
+      line-height: 30px; } }
+
+.landing-card small {
+  font-size: 16px;
+  line-height: 30px;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s; }
+  @media (max-width: 500px) {
+    .landing-card small {
+      font-size: 10px;
+      line-height: 16px; } }
 .section-title {
   color: #FEFEFE; }
