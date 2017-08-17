@@ -4,3 +4,5 @@ import './sass/base/typography.sass';
 import './sass/layout/flex.sass';
 
 require.context("./sass/components", true, /.*/);
+
+import './sass/views/invoices.sass';
