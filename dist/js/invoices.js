@@ -168,8 +168,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_layout_flex_sass__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_layout_flex_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__sass_layout_flex_sass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_layout_grid_sass__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_layout_grid_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__sass_layout_grid_sass__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sass_views_invoices_sass__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sass_views_invoices_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__sass_views_invoices_sass__);
+
 
 
 
@@ -182,6 +185,12 @@ __webpack_require__(3);
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

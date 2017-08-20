@@ -1,6 +1,15 @@
 $min-width: 320px
 $breakpoint-s: 420px
+$breakpoint-m: 800px
+
+@function one-pixel-higher($value)
+  @return $value + 1px
 
 @mixin for-mobile
   @media (max-width: $breakpoint-s)
     @content
+
+@mixin for-medium-screen
+  @media (min-width: one-pixel-higher($breakpoint-s))
+    @media (max-width: $breakpoint-m)
+      @content

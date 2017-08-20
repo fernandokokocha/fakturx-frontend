@@ -23,8 +23,16 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+html {
+  overflow: hidden;
+  height: 100%; }
+
+body {
+  overflow: auto;
+  height: 100%; }
 html, body {
-  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #212121; }
@@ -33,6 +41,24 @@ html, body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 600;
   color: #B2EBF2; }
+
+h1, .h1 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
+
+h2, .h2 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
+
+h3, .h3 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
+
+h4, .h4 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
+
+h5, .h5 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
+
+h6, .h6 {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
 
 h1, .h1 {
   font-size: 36px;
@@ -235,12 +261,8 @@ p, span {
     outline: none; }
 /* Common button styles */
 .button {
-  min-width: 200px;
-  max-width: 300px;
   display: block;
-  margin: 1em;
   padding: 1em 2em;
-  border: none;
   background: none;
   color: inherit;
   vertical-align: middle;
@@ -253,12 +275,15 @@ p, span {
 
 /* Sizes */
 .button-s {
+  min-width: 100px;
   font-size: 14px; }
 
 .button-m {
+  min-width: 150px;
   font-size: 16px; }
 
 .button-l {
+  min-width: 200px;
   font-size: 18px; }
 
 /* Visibility */
@@ -287,7 +312,7 @@ p, span {
     align-items: center;
     padding: 10px 0; }
     .form .form-row .form-label {
-      font-size: 22px;
+      font-size: 20px;
       width: 100px; }
     .form .form-row .form-input[type="email"],
     .form .form-row .form-input[type="password"] {
@@ -326,8 +351,8 @@ p, span {
     align-items: center;
     background-color: transparent; }
     .top-left-container .nav-list .nav-item {
-      font-size: 24px;
-      line-height: 30px;
+      font-size: 20px;
+      line-height: 26px;
       display: inline;
       color: #FEFEFE;
       padding: 20px 30px;
@@ -354,15 +379,34 @@ p, span {
     line-height: 70px;
     vertical-align: middle;
     padding: 0 20px;
-    color: #FEFEFE;
     text-decoration: none;
+    color: #FEFEFE;
     -webkit-transition: color, 0.5s;
-    transition: color, 0.5s; }
+    transition: color, 0.5s;
+    background-color: inherit; }
     .nav-list .nav-item:hover {
+      background-color: #0097A7; }
+  .nav-list .active {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #FEFEFE;
+    -webkit-transition: color, 0.5s;
+    transition: color, 0.5s;
+    background-color: #00a8c0;
+    border-bottom: 5px solid #008393; }
+    .nav-list .active:hover {
       background-color: #0097A7; }
 .section-title {
   color: #FEFEFE; }
 
 .landing-card h1.neon {
+  padding: 30px 0;
   font-size: 50px;
   line-height: 60px; }
+
+.landing-button {
+  margin: 1em; }

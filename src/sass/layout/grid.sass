@@ -1,0 +1,49 @@
+@import '../base/mixins'
+@import '../layout/breakpoints'
+@import '../layout/grid-measures'
+@import '../variables/colors'
+
+.layout
+  display: grid
+  width: 100%
+  min-height: 1000px
+  grid-template-columns: 1fr 800px 1fr
+  grid-template-rows: $header-height 1fr 200px
+  @include for-medium-screen
+    grid-template-columns: 0 1fr 0
+  .header-bar
+    grid-column-start: 1
+    grid-column-end: 4
+    grid-row-start: 1
+    grid-row-end: 2
+    order: 0
+  .header
+    grid-column-start: 2
+    grid-column-end: 3
+    grid-row-start: 1
+    grid-row-end: 2
+    display: flex
+    justify-content: space-between
+    align-items: center
+    order: 1
+  .background
+    grid-column-start: 1
+    grid-column-end: 4
+    grid-row-start: 2
+    grid-row-end: 3
+    order: 0
+  .content
+    grid-column-start: 2
+    grid-column-end: 3
+    grid-row-start: 2
+    grid-row-end: 3
+    height: 100%
+    display: block
+    order: 1
+  .footer
+    grid-column-start: 1
+    grid-column-end: 4
+    grid-row-start: 3
+    grid-row-end: 4
+    height: 100%
+    display: flex

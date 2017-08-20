@@ -3,40 +3,27 @@
 @import '../layout/grid-measures'
 @import '../variables/colors'
 
-.layout
-  display: grid
-  width: 100%
-  min-height: 1000px
-  grid-template-columns: 1fr 800px 1fr
-  grid-template-rows: $header-height 1fr 200px
+.app-container
+  background-color: $primary-color
+
+.header-bar
+  background-color: $primary-color
 .header
-  grid-column-start: 1
-  grid-column-end: 4
-  grid-row-start: 1
-  grid-row-end: 2
-  background-color: $primary-color
-.header-content
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 1
-  grid-row-end: 2
   background-color: transparent
-  display: flex
-  justify-content: space-between
-  align-items: center
+.background
+  background: white
 .content
-  grid-column-start: 2
-  grid-column-end: 3
-  grid-row-start: 2
-  grid-row-end: 3
-  background-color: $light-primary-color
-  height: 100%
-  display: flex
+  background-color: $whitey
+  padding: 20px
+  p
+    margin: 20px 0
 .footer
-  grid-column-start: 1
-  grid-column-end: 4
-  grid-row-start: 3
-  grid-row-end: 4
   background-color: $primary-color
-  height: 100%
+
+.button-container
   display: flex
+  flex-flow: row wrap
+  justify-content: flex-start
+  align-items: center
+  button:not(:last-child)
+    margin-right: 10px
