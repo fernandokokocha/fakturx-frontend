@@ -1,23 +1,17 @@
 @import '../variables/colors'
 @import '../layout/breakpoints'
 
-.form
-  width: 400px
-  margin: 10px
-  @include for-mobile
-    width: 300px
+.form-container-inline
+  display: flex
+  flex-flow: column
+  flex-wrap: wrap
+  justify-content: center
+  align-items: flex-start
   .form-row
-    width: 100%
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    align-items: center
-    padding: 10px 0
     .form-label
-      font-size: 20px
-      width: 100px
-    .form-input[type="email"],
-    .form-input[type="password"]
+      display: inline-block
+      width: 130px
+    .form-input
       width: 300px
       padding: 5px
       &:focus

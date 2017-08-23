@@ -1,5 +1,6 @@
 @import '../variables/colors'
 @import '../base/mixins'
+@import '../layout/breakpoints'
 
 .section-title
   color: $light-text-color
@@ -10,5 +11,32 @@
     font-size: 50px
     line-height: 60px
 
-.landing-button
+.sign-in-form
+  width: 400px
+  margin: 10px
+  @include for-mobile
+    width: 300px
+  display: flex
+  flex-flow: column
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  .form-row
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+    .form-label
+      font-size: 20px
+      width: 100px
+    .form-input[type="email"],
+    .form-input[type="password"]
+      width: 300px
+      padding: 5px
+      &:focus
+        background-color: $light-primary-color
+
+.button-landing
   margin: 1em
