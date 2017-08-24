@@ -15,8 +15,13 @@
 .content
   background-color: $whitey
   padding: 20px
-  p
-    margin: 20px 0
+  section:not(:first-child)
+    padding-top: 20px
+  section
+    padding-bottom: 20px
+    border-bottom: $divider-color 2px solid
+    h1
+      margin-bottom: 30px
 .footer
   background-color: $primary-color
 

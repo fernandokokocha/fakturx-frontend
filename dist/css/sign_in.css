@@ -307,19 +307,20 @@ p, span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start; }
-  .form-container-inline .form-row .form-label {
-    display: inline-block;
-    width: 130px; }
-  .form-container-inline .form-row .form-input {
-    width: 300px;
-    padding: 5px; }
-    .form-container-inline .form-row .form-input:focus {
-      background-color: #B2EBF2; }
+  .form-container-inline .form-row {
+    margin: 5px 0; }
+    .form-container-inline .form-row .form-label {
+      display: inline-block;
+      width: 130px; }
+    .form-container-inline .form-row .form-input {
+      width: 300px;
+      padding: 5px; }
+      .form-container-inline .form-row .form-input:focus {
+        background-color: #B2EBF2; }
 .list-wrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding: 20px 0; }
+  flex-direction: column; }
 
 .list-header {
   border-bottom: 1px solid black;
