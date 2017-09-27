@@ -346,11 +346,8 @@ p, span {
   max-height: 100%;
   overflow-y: auto; }
 
-.date-col, .amount-col {
-  width: 40%; }
-
-.details-col {
-  width: 20%; }
+.date-col, .number-col, .gross-amount-col, .details-col {
+  width: 25%; }
 .landing-card {
   padding: 5px 0;
   width: 100%;
@@ -509,3 +506,6 @@ p, span {
   align-items: center; }
   .button-container button:not(:last-child) {
     margin-right: 10px; }
+
+#invoice-table .prototype {
+  display: none; }

@@ -5,6 +5,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/invoices.css">
     <script src="js/invoices.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -23,31 +24,30 @@
         <article class="content">
           <section>
               <h1>Invoices</h1>
-              <div class="list-wrapper">
+              <div class="list-wrapper" id="invoice-table">
                 <div class="list-header">
                   <div class="list-row">
                     <div class="list-col date-col"> Date </div>
-                    <div class="list-col amount-col"> Amount </div>
+                    <div class="list-col number-col"> Number </div>
+                    <div class="list-col gross-amount-col"> Gross amount </div>
                     <div class="list-col details-col"> Details </div>
                   </div>
                 </div>
                 <div class="list-content">
-                  <div class="list-row" >
-                    <div class="list-col date-col"> 10.08.2017 </div>
-                    <div class="list-col amount-col"> 5zł </div>
-                    <div class="list-col details-col"> Show </div>
-                  </div>
-                  <div class="list-row" >
-                    <div class="list-col date-col"> 10.07.2017 </div>
-                    <div class="list-col amount-col"> 5zł </div>
-                    <div class="list-col details-col"> Show </div>
+                  <div class="list-row prototype">
+                    <div class="list-col date-col">A</div>
+                    <div class="list-col number-col">B</div>
+                    <div class="list-col gross-amount-col">C</div>
+                    <div class="list-col details-col">
+                      <a href="www.bartek.pl">Details</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </section>
             <section>
               <h1>New invoice</h1>
-              <form action="http://localhost:3000/invoices">
+              <form action="http://localhost:3000/invoices" method="post">
                   <div class="form-container-inline">
                       <div class="form-row">
                         <label for="number" class="form-label">Number</label>
@@ -86,5 +86,19 @@
         <footer class="footer"></footer>
     </div>
 </div>
+<script>
+$(document).ready(function() {
+  $.ajax({url: "http://localhost:3000/invoice", success: function(result){
+      var prototype = $('#invoice-table .list-content .prototype');
+      var row = prototype.clone().removeClass('prototype');
+      row.children('.date-col').first().text(result[0].date);
+      row.children('.number-col').first().text(result[0].number);
+      row.children('.gross-amount-col').first().text(result[0].gross_sum);
+
+      row.children('.details-col').children('a').first().attr('href', result[0].url);
+      row.appendTo('#invoice-table .list-content');
+  }});
+});
+</script>
 </body>
 </html>
