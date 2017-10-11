@@ -90,13 +90,15 @@
 $(document).ready(function() {
   $.ajax({url: "http://localhost:3000/invoice", success: function(result){
       var prototype = $('#invoice-table .list-content .prototype');
-      var row = prototype.clone().removeClass('prototype');
-      row.children('.date-col').first().text(result[0].date);
-      row.children('.number-col').first().text(result[0].number);
-      row.children('.gross-amount-col').first().text(result[0].gross_sum);
+      result.forEach(function(invoice) {
+        var row = prototype.clone().removeClass('prototype');
+        row.children('.date-col').first().text(invoice.date);
+        row.children('.number-col').first().text(invoice.number);
+        row.children('.gross-amount-col').first().text(invoice.gross_sum);
 
-      row.children('.details-col').children('a').first().attr('href', result[0].url);
-      row.appendTo('#invoice-table .list-content');
+        row.children('.details-col').children('a').first().attr('href', invoice.url);
+        row.appendTo('#invoice-table .list-content');
+      });
   }});
 });
 </script>
