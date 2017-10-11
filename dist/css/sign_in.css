@@ -316,7 +316,10 @@ p, span {
       width: 300px;
       padding: 5px; }
       .form-container-inline .form-row .form-input:focus {
-        background-color: #B2EBF2; }
+        background-color: #B2EBF2;
+        border: 2px solid #999999; }
+      .form-container-inline .form-row .form-input.short {
+        width: 140px; }
 .list-wrapper {
   position: relative;
   display: flex;
