@@ -260,8 +260,10 @@ p, span {
   .button.button-primary:hover {
     background-color: #FF5722; }
   .button.button-primary:focus {
+    background-color: #ff6b36;
     outline: none; }
   .button.button-primary:active {
+    background-color: #eb430e;
     outline: none; }
 /* Common button styles */
 .button {
@@ -308,13 +310,17 @@ p, span {
   justify-content: center;
   align-items: flex-start; }
   .form-container-inline .form-row {
-    margin: 5px 0; }
+    margin: 5px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
     .form-container-inline .form-row .form-label {
       display: inline-block;
       width: 130px; }
     .form-container-inline .form-row .form-input {
       width: 300px;
-      padding: 5px; }
+      padding: 5px;
+      margin: 2px; }
       .form-container-inline .form-row .form-input:focus {
         background-color: #B2EBF2;
         border: 2px solid #999999; }
@@ -337,8 +343,8 @@ p, span {
 .list-col {
   height: 30px;
   line-height: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   white-space: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
@@ -349,8 +355,17 @@ p, span {
   max-height: 100%;
   overflow-y: auto; }
 
-.date-col, .number-col, .gross-amount-col, .details-col {
+.date-col, .gross-amount-col {
   width: 25%; }
+  @media (max-width: 420px) {
+    .date-col, .gross-amount-col {
+      display: none; } }
+
+.number-col, .details-col {
+  width: 25%; }
+  @media (max-width: 420px) {
+    .number-col, .details-col {
+      width: 50%; } }
 .landing-card {
   padding: 5px 0;
   width: 100%;

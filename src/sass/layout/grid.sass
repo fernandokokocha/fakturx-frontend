@@ -9,6 +9,8 @@
   min-height: 1000px
   grid-template-columns: 1fr 800px 1fr
   grid-template-rows: $header-height 1fr 200px
+  @include for-mobile
+    grid-template-columns: 0 1fr 0
   @include for-medium-screen
     grid-template-columns: 0 1fr 0
   .header-bar
