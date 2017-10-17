@@ -416,7 +416,7 @@ p, span {
     background-color: inherit; }
     .nav-list .nav-item:hover {
       background-color: #0097A7; }
-  .nav-list .active {
+  .nav-list .nav-item.active {
     display: inline-block;
     height: 70px;
     line-height: 70px;
@@ -427,8 +427,9 @@ p, span {
     -webkit-transition: color, 0.5s;
     transition: color, 0.5s;
     background-color: #00a8c0;
-    border-bottom: 5px solid #008393; }
-    .nav-list .active:hover {
+    border-bottom: 5px solid #008393;
+    line-height: calc($header-height - 5px); }
+    .nav-list .nav-item.active:hover {
       background-color: #0097A7; }
 .landing-card h1.neon {
   font-size: 90px;
