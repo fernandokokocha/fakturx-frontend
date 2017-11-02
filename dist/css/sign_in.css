@@ -110,10 +110,7 @@ p, span {
   overflow: hidden;
   background: #FF5722;
   -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  font-size: 18px;
-  font-weight: 600;
-  border: 3px solid; }
+  transition: background-color 0.3s; }
   .button.button-landing > span {
     display: inline-block;
     padding: 1em 0; }
@@ -314,18 +311,20 @@ p, span {
     display: flex;
     flex-wrap: wrap;
     align-items: center; }
-    .form-container-inline .form-row .form-label {
+    .form-container-inline .form-row label {
       display: inline-block;
       width: 130px; }
-    .form-container-inline .form-row .form-input {
+    .form-container-inline .form-row input[type="text"], .form-container-inline .form-row input[type="date"],
+    .form-container-inline .form-row input[type="password"], .form-container-inline .form-row input[type="email"] {
       width: 300px;
       padding: 5px;
       margin: 2px; }
-      .form-container-inline .form-row .form-input:focus {
-        background-color: #B2EBF2;
-        border: 2px solid #999999; }
-      .form-container-inline .form-row .form-input.short {
+      .form-container-inline .form-row input[type="text"].short, .form-container-inline .form-row input[type="date"].short,
+      .form-container-inline .form-row input[type="password"].short, .form-container-inline .form-row input[type="email"].short {
         width: 140px; }
+    .form-container-inline .form-row input:focus {
+      background-color: #B2EBF2;
+      border: 2px solid #999999; }
 .list-wrapper {
   position: relative;
   display: flex;
