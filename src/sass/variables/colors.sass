@@ -11,8 +11,8 @@ $primary-text-color: #212121
 $light-text-color: $whitish
 $divider-color: #BDBDBD
 
-@function darken($color)
-  @return $color - rgb(20, 20, 20)
+@function darken_slightly($color)
+  @return darken($color, 5%)
 
-@function lighten($color)
-  @return $color + rgb(20, 20, 20)
+@function lighten_slightly($color)
+  @return lighten($color, 5%)

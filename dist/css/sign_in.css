@@ -257,10 +257,10 @@ p, span {
   .button.button-primary:hover {
     background-color: #FF5722; }
   .button.button-primary:focus {
-    background-color: #ff6b36;
+    background-color: #ff6a3c;
     outline: none; }
   .button.button-primary:active {
-    background-color: #eb430e;
+    background-color: #ff4409;
     outline: none; }
 /* Common button styles */
 .button {
@@ -440,8 +440,8 @@ p, span {
     color: #FEFEFE;
     -webkit-transition: color, 0.5s;
     transition: color, 0.5s;
-    background-color: #00a8c0;
-    border-bottom: 5px solid #008393;
+    background-color: #00a5bb;
+    border-bottom: 5px solid #00808e;
     line-height: calc($header-height - 5px); }
     .nav-list .nav-item.active:hover {
       background-color: #0097A7; }
