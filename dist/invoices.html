@@ -90,18 +90,26 @@
     </main>
 </div>
 <script>
+(function ( $ ) {
+  $.fn.populateInvoices = function(invoices) {
+    var that = this;
+    invoices.forEach(function(invoice) {
+      var row = that.find('.prototype').clone().removeClass('prototype');
+      row.children('.date-col').first().text(invoice.date);
+      row.children('.number-col').first().text(invoice.number);
+      row.children('.gross-amount-col').first().text(invoice.gross_sum);
+
+      row.children('.details-col').children('a').first().attr('href', invoice.url);
+      row.appendTo(that);
+    });
+    return that;
+  };
+}( jQuery ));
+
 $(document).ready(function() {
   $.ajax({url: "http://localhost:3000/invoice", success: function(result){
-      var prototype = $('#invoice-table .list-content .prototype');
-      result.forEach(function(invoice) {
-        var row = prototype.clone().removeClass('prototype');
-        row.children('.date-col').first().text(invoice.date);
-        row.children('.number-col').first().text(invoice.number);
-        row.children('.gross-amount-col').first().text(invoice.gross_sum);
-
-        row.children('.details-col').children('a').first().attr('href', invoice.url);
-        row.appendTo('#invoice-table .list-content');
-      });
+    var $invoiceList = $('#invoice-table .list-content');
+    $invoiceList.populateInvoices(result);
   }});
 });
 </script>
