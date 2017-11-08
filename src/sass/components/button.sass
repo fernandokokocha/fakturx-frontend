@@ -1,4 +1,5 @@
 @import '../variables/colors'
+@import '../utils/mixins'
 
 /* Common button styles
 .button
@@ -38,3 +39,16 @@
 .button-thick
   font-weight: 600
   border: 3px solid
+
+/* Primary button
+.button.button-primary
+  background-color: $secondary-accent-color
+  @include transition(background-color 0.3s)
+  &:hover
+    background-color: $accent-color
+  &:focus
+    background-color: lighten_slightly($accent-color)
+    outline: none
+  &:active
+    background-color: darken_slightly($accent-color)
+    outline: none

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 15);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,13 +81,12 @@
 
 var map = {
 	"./button-landing.sass": 3,
-	"./button-primary.sass": 4,
-	"./button.sass": 5,
-	"./form.sass": 6,
-	"./item-list.sass": 7,
-	"./landing-card.sass": 8,
-	"./navigation-unlogged.sass": 9,
-	"./navigation.sass": 10
+	"./button.sass": 4,
+	"./form.sass": 5,
+	"./item-list.sass": 6,
+	"./landing-card.sass": 7,
+	"./navigation-unlogged.sass": 8,
+	"./navigation.sass": 9
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -148,17 +147,11 @@ webpackContext.id = 2;
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 10 */,
 /* 11 */,
 /* 12 */,
 /* 13 */,
-/* 14 */,
-/* 15 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -167,9 +160,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sass_base_reset_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__sass_base_reset_sass__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_layout_grid_sass__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_layout_grid_sass__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_layout_grid_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__sass_layout_grid_sass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__sass_views_invoices_sass__);
 
 
@@ -182,13 +175,13 @@ __webpack_require__(2);
 
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

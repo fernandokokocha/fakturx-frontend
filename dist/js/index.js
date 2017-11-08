@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -81,13 +81,12 @@
 
 var map = {
 	"./button-landing.sass": 3,
-	"./button-primary.sass": 4,
-	"./button.sass": 5,
-	"./form.sass": 6,
-	"./item-list.sass": 7,
-	"./landing-card.sass": 8,
-	"./navigation-unlogged.sass": 9,
-	"./navigation.sass": 10
+	"./button.sass": 4,
+	"./form.sass": 5,
+	"./item-list.sass": 6,
+	"./landing-card.sass": 7,
+	"./navigation-unlogged.sass": 8,
+	"./navigation.sass": 9
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -149,12 +148,6 @@ webpackContext.id = 2;
 
 /***/ }),
 /* 10 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -163,7 +156,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sass_base_reset_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__sass_base_reset_sass__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__sass_base_typography_sass__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_views_index_sass__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_views_index_sass__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sass_views_index_sass___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__sass_views_index_sass__);
 
 
@@ -174,7 +167,7 @@ __webpack_require__(2);
 
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
